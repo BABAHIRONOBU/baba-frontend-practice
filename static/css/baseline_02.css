@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0px;
+}
+
+.page-container {
+    background-color: lightgray;
+}
+
+
+/* position이 fixed가 되면 block 속성이 없어지는 것 같다. 가로로 길게 늘어지지 않고 content 크기만큰 차지한다. */
+
+header {
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}
+
+
+/* 
+height를 지정하지 않는 것이 좋다. 내부 요소의 높이에 따라 높이가 정해지게 만든다.
+*/
+
+.main-container {
+    margin-top: 70px;
+}
+
+
+/* 반응형으로 만드려면 미디어쿼리를 이용하거나 프레임워크를 이용한다. */
+
+main {
+    width: 1000px;
+    margin: auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 1000px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}

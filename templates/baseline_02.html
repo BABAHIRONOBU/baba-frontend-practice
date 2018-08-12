@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Baseline_02</title>
+    <link rel="stylesheet" href="../static/css/baseline_02.css" type="text/css">
+</head>
+<!-- 
+  header, main 영역만 존재하고 header는 양 옆 마진이 없고, main은 양 옆 마진이 존재하는 레이아웃
+ -->
+
+<body>
+    <!-- page-container는 배경색을 주기 위해서 만들었고 높이는 main 요소에 따라 달라진다. -->
+    <div class="page-container">
+        <!-- header 요소는 position이 fixed이고 border를 bottom에만 줬다. left, right에도 주려면 box-size를 border-size로 해야한다. -->
+        <header>
+            header
+        </header>
+        <!-- main-container는 고정돼있는 header와 분리시킨다. main태그에서 padding을 줄 수도 있었지만 배경색이 없어져버린다. -->
+        <div class="main-container">
+            <!-- padding을 주면 배경색이 없어지고 화면 크기를 줄였을 때 가로폭도 같이 줄어들어서 width를 설정하고 margin을 auto로 지정하였다. -->
+            <main>
+                main
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

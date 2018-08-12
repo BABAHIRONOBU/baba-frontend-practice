@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 200px;
+    background-color: gray
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+.container {
+    /* 이렇게 하면 해당 태그가 block속성일 때 width는 viewport의 100%를 가진다. 상대적으로 왼쪽의 200px 밀려있을 뿐이다.
+    position: relative;
+    left: 200px; 
+    */
+    padding-left: 200px;
+}
+
+header {
+    height: 50px;
+    padding: 15px;
+    background-color: aquamarine;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    height: 50px;
+    padding: 15px;
+    background-color: aquamarine;
+}
