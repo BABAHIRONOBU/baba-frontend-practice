@@ -18,7 +18,7 @@ nav ul li {
 }
 
 .container {
-    /* 이렇게 하면 해당 태그가 block속성일 때 width는 viewport의 100%를 가진다. 상대적으로 왼쪽의 200px 밀려있을 뿐이다.
+    /* 이렇게 하면 해당 태그가 block속성일 때 width는 viewport의 100%를 가진다. 상대적으로 왼쪽으로 200px 밀려있을 뿐이다.
     position: relative;
     left: 200px; 
     */
