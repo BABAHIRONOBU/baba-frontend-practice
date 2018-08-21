@@ -1,5 +1,9 @@
+/* box-sizing 속성은 다소 근래에 생긴 것이라서 -webkit, -moz를 붙여야 한다. */
+
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 html,
@@ -8,7 +12,10 @@ body {
 }
 
 
-/* height or width의 크기는 기본적으로 padding의 크기와 content의 크기를 더한 값이다. margin은 포함되지 않는다. */
+/* height: 100vh 라고 하면 파란색 부분이 뷰포트의 높이만큼 차지하고, margin, border, padding은 또 따로 영역을 차지한다. */
+
+
+/* box-sizing을 border-box로 설정하면 border, padding, content의 크기를 합한 값이 100vh를 차지한다. */
 
 .container {
     min-height: 100vh;
